@@ -63,3 +63,5 @@ Versioning History
 VERSÃO 1.1: Responsive and scalable simple layout website
 Layout responsivo e dimensionado com propriedades em comum em um único lugar; separando os elementos que se repetem por vírgula e faremos o cálculo da altura vertical de header somado a margem vertical de footer somado às margens de cada elemento.
 
+VERSÃO 2.1: Regra media , mais Responsivo
+Modifica o estilo de elemento para ser apresentado em diferentes telas de diferentes dispositivos, seja smartphones, tables, ou desktops;
