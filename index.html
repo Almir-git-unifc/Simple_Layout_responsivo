@@ -36,29 +36,51 @@
             height: 100px;
         }
 
+        header #logo {
+            flex: 0 1 200px;
+            background: #c9c9c9;
+        }
+
+        #openMenu,
+        #closeMenu {
+            border: none;
+            background: none;
+            font-size: 30px;
+            /* fonte aumentada no menu */
+            font-weight: bold;
+            /* fonte forte */
+            padding: 0px 5px 0px 5px;
+            /* margem esquerda e direita de 5px */
+            cursor: pointer;
+            /* quando mouse passar por cima vira ponteiro */
+            display: none;
+            /* ocultar exibição, só vai aparecer se na media< 717px */
+        }
+
         nav {
             flex: 1 1 100vw;
-            height: 100px;
             align-items: center;
             /* alinhado horizontal no centro */
-            justify-content: center;
-            /* alinhado vertical no centro */
+            justify-content: flex-end;
+            /* vamos deixar o menu a direita */
         }
 
         nav a {
-            margin: 5%;
+            margin: 3%;
             /* margem de links */
-            font-size: 20pt;
+            font-size: 15pt;
             /* tamanho de fonte de links */
         }
 
         main {
             flex: 20 1 500px;
-            height: calc(100vh - 330px);
+            height: calc(100vh - 224px);
         }
 
         aside {
             flex: 1 1 200px;
+            height: calc(100vh - 224px);
+            /* if page large OK. else regra media */
         }
 
         footer {
@@ -76,7 +98,7 @@
         /* Após o footer vamos adicionar */
         @media only screen and (max-width: 923px) {
             main {
-                height: calc(100vh - 436px);
+                height: calc(100vh - 330px);
             }
 
             aside {
@@ -85,28 +107,61 @@
             }
         }
 
-        /* Removido @media …max-width: 717px com seu nav e main */
-        /* @media only screen and (max-width: 717px) {
-            nav {
-                height: 100px;
+        /* Volta @media …max-width: 717px com seu nav e main */
+        /* Só aparecer se largura for menor que 717px */
+        @media only screen and (max-width: 717px) {
+
+            #openMenu,
+            #closemenu {
+                display: block;
+                /* volta a visual flex  */
             }
 
-            main {
-                height: calc(100vh - 436px);
-                -- 436=330 + nav + 3 marg + 3 marg --
+            #openMenu {
+                margin-left: auto;
+                /* o auto indica espaço esquerdo não usado por outros itens da nav.*/
             }
-          }      */
+
+            #closeMenu {
+                position: fixed;
+                /* ficará com posição fixada em relação ao container */
+                right: 15px;
+                /* fixado em 15 a direita */
+                top: 15px;
+                /* fixado em 15 do topo */
+            }
+
+            nav {
+                position: fixed;
+                flex-direction: column;
+                width: 100vw;
+                height: 100vh;
+                background: rgba(255, 255, 255, 0.8);
+                align-items: center;
+                /* alinhado vertical no centro*/
+                justify-content: center;
+                /* alinhado horizontal no centro */
+                margin: 0;
+                /* margem removida de todos os lados */
+                display: none;
+                /* e para deixar visivel vamos uar JavaScript */
+            }
+        }
     </style>
 </head>
 
 <body>
-    <header>Cabeçalho</header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Produtos</a>
-        <a href="#">Sobre</a>
-        <a href="#">Contato</a>
-    </nav>
+    <header>
+        <a href="#" id="logo">LOGO</a>
+        <button id="openMenu">&#9776;</button> <!-- &#9776 é menu sandwich -->
+        <nav>
+            <button id="closeMenu">X</button>
+            <a href="#">Home</a>
+            <a href="#">Produtos</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
     <main>Principal</main>
     <aside>Relacionado</aside>
     <footer>Rodapé</footer>

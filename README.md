@@ -71,3 +71,6 @@ Modifica o estilo de elemento para ser apresentado em diferentes telas de difere
 
 VERSÃO 2.2: Menu na Tag Nav 
 O Menu foi mudado para baixo do cabeçalho, e criado itens de Menu para exemplificar; teve mudanças em nav, nav a, altura de main, a, height calc em @media 923 e tag nav em html, e foi Removido @media …max-width: 717px com seu nav e main.
+
+VERSÃO 3.1:  Nav-Menu in Tag Header with icon Sandwich
+Colocamos o MENU com a div nav e todos os seus links dentro do header ou cabeçalho.
