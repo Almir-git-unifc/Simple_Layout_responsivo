@@ -74,3 +74,6 @@ O Menu foi mudado para baixo do cabeçalho, e criado itens de Menu para exemplif
 
 VERSÃO 3.1:  Nav-Menu in Tag Header with icon Sandwich
 Colocamos o MENU com a div nav e todos os seus links dentro do header ou cabeçalho.
+
+VERSÃO 4.1: Menu deslizante with icon sandwich using JS Code
+Colocamos JS para mvoer o Menu da direita para e esquerda, e também um atraso na transição do aparecimento da nav menu

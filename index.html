@@ -145,6 +145,9 @@
                 /* margem removida de todos os lados */
                 display: none;
                 /* e para deixar visivel vamos uar JavaScript */
+                opacity: 0;
+                transition: 0.3s;
+                /* 3 ms para atenuar a mudança de transição */
             }
         }
     </style>
@@ -154,7 +157,7 @@
     <header>
         <a href="#" id="logo">LOGO</a>
         <button id="openMenu">&#9776;</button> <!-- &#9776 é menu sandwich -->
-        <nav>
+        <nav id="menu">
             <button id="closeMenu">X</button>
             <a href="#">Home</a>
             <a href="#">Produtos</a>
@@ -165,6 +168,31 @@
     <main>Principal</main>
     <aside>Relacionado</aside>
     <footer>Rodapé</footer>
+
+    <script type="text/javascript">
+        openMenu.addEventListener('click', () => {
+            menu.style.display = 'flex'; /* altera display para flex */
+
+            menu.style.right = (menu.offsetWidth * -1) + 'px'
+            openMenu.style.display = 'none'; /* oculta o menu só após receber o click */
+
+            setTimeout(() => {
+                menu.style.opacity = '1';
+                menu.style.right = '0'; /* após 10 ms vai para posição zero */
+            }, 10);
+        });
+
+        /* a propriedade style será removida após 200ms, usando setTimeout */
+        /* que recebe uma função para executar, e o tempo de espera*/
+        closeMenu.addEventListener('click', () => {
+            menu.style.opacity = '0';
+            menu.style.right = (menu.offsetWidth * -1) + 'px';
+            setTimeout(() => {
+                menu.removeAttribute('style');
+                openMenu.removeAttribute('style');  /*exibir qdo menu fechado*/
+            }, 200);
+        });
+    </script>
 </body>
 
 </html>
