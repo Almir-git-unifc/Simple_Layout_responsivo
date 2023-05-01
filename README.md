@@ -52,16 +52,22 @@ From your command line:
 ## Run locally the app
 ### $ `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 
-Versioning History
+&nbsp;
+
+### Versioning History
+
 VERSÃO 1.1: Responsive and scalable simple layout website
 Layout responsivo e dimensionado com propriedades em comum em um único lugar; separando os elementos que se repetem por vírgula e faremos o cálculo da altura vertical de header somado a margem vertical de footer somado às margens de cada elemento.
 
 VERSÃO 2.1: Regra media , mais Responsivo
 Modifica o estilo de elemento para ser apresentado em diferentes telas de diferentes dispositivos, seja smartphones, tables, ou desktops;
+
+VERSÃO 2.2: Menu na Tag Nav 
+O Menu foi mudado para baixo do cabeçalho, e criado itens de Menu para exemplificar; teve mudanças em nav, nav a, altura de main, a, height calc em @media 923 e tag nav em html, e foi Removido @media …max-width: 717px com seu nav e main.

@@ -37,12 +37,24 @@
         }
 
         nav {
-            flex: 1 1 200px;
+            flex: 1 1 100vw;
+            height: 100px;
+            align-items: center;
+            /* alinhado horizontal no centro */
+            justify-content: center;
+            /* alinhado vertical no centro */
+        }
+
+        nav a {
+            margin: 5%;
+            /* margem de links */
+            font-size: 20pt;
+            /* tamanho de fonte de links */
         }
 
         main {
             flex: 20 1 500px;
-            height: calc(100vh - 224px);
+            height: calc(100vh - 330px);
         }
 
         aside {
@@ -54,10 +66,17 @@
             height: 100px;
         }
 
+        a {
+            text-decoration: none;
+            /* remove sublinhado */
+            color: inherit;
+            /* cor = elemento pai, ou seja, inherit */
+        }
+
         /* Após o footer vamos adicionar */
         @media only screen and (max-width: 923px) {
             main {
-                height: calc(100vh - 330px);
+                height: calc(100vh - 436px);
             }
 
             aside {
@@ -66,23 +85,28 @@
             }
         }
 
-        /* Como a próxima quebra ocorre aos 717 px, vamos inserir outra mudança */
-        @media only screen and (max-width: 717px) {
+        /* Removido @media …max-width: 717px com seu nav e main */
+        /* @media only screen and (max-width: 717px) {
             nav {
                 height: 100px;
             }
 
             main {
                 height: calc(100vh - 436px);
-                /* 436=330 + nav + 3 marg + 3 marg */
+                -- 436=330 + nav + 3 marg + 3 marg --
             }
-        }
+          }      */
     </style>
 </head>
 
 <body>
     <header>Cabeçalho</header>
-    <nav>Menu</nav>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Produtos</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
     <main>Principal</main>
     <aside>Relacionado</aside>
     <footer>Rodapé</footer>
