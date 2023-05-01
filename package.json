@@ -1,0 +1,14 @@
+{
+  "name": "layout-front-end_responsivo_extra-puc_rms",
+  "version": "1.0.0",
+  "description": "layout responsive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abs",
+  "license": "ISC",
+  "devDependencies": {
+    "git-commit-msg-linter": "^4.11.0"
+  }
+}
