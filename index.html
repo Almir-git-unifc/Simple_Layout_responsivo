@@ -11,6 +11,30 @@
             box-sizing: border-box;
         }
 
+        /* MODIFICANDO O SCROLL*/
+        /* Firefox */
+        * {
+            /* O * muda caracteristicas do browser e dos setores*/
+            scrollbar-width: 17px;
+            scrollbar-color: #A0522D #F4A460;
+            /* #A05 frente e #F4A cor do fundo*/
+        }
+
+        /* Chrome, Edge e Safari */
+        ::-webkit-srollbar {
+            width: 12px;
+        }
+
+        *::-webkit-scrollbar-track {
+            background: #9a9a9a;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            background-color: #5a5a5a;
+            border-radius: 20px;
+            border: 3ps solid #9a9a9a;
+        }
+
         body {
             display: flex;
             flex-wrap: wrap;
@@ -39,6 +63,8 @@
         header #logo {
             flex: 0 1 200px;
             background: #c9c9c9;
+            align-items: center;
+            height: 100px;
         }
 
         #openMenu,
@@ -59,6 +85,8 @@
 
         nav {
             flex: 1 1 100vw;
+            top: 0px;
+            /* top dos itens de menu  	*/
             align-items: center;
             /* alinhado horizontal no centro */
             justify-content: flex-end;
@@ -75,6 +103,16 @@
         main {
             flex: 20 1 500px;
             height: calc(100vh - 224px);
+            flex-wrap: wrap;
+            overflow: auto;
+        }
+
+        main section {
+            width: 100%;
+            height: 2000px;
+            /* poderia ser 50.000px ou mais */
+            margin: 10px;
+            background: linear-gradient(5deg, #FF6347, transparent, #66CDAA 25%, transparent, #F4A460, transparent, #836FFF);
         }
 
         aside {
@@ -97,13 +135,23 @@
 
         /* Após o footer vamos adicionar */
         @media only screen and (max-width: 923px) {
+            header {
+                order: 0;
+            }
+
             main {
                 height: calc(100vh - 330px);
+                order: 1;
             }
 
             aside {
                 flex: 1 1 100vw;
                 height: 100px;
+                order: 2;
+            }
+
+            footer {
+                order: 3;
             }
         }
 
@@ -165,8 +213,14 @@
             <a href="#">Contato</a>
         </nav>
     </header>
-    <main>Principal</main>
+
     <aside>Relacionado</aside>
+
+    <main>
+        <p>Principal</p>
+        <section></section>
+    </main>
+    
     <footer>Rodapé</footer>
 
     <script type="text/javascript">

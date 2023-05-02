@@ -76,4 +76,7 @@ VERSÃO 3.1:  Nav-Menu in Tag Header with icon Sandwich
 Colocamos o MENU com a div nav e todos os seus links dentro do header ou cabeçalho.
 
 VERSÃO 4.1: Menu deslizante with icon sandwich using JS Code
-Colocamos JS para mvoer o Menu da direita para e esquerda, e também um atraso na transição do aparecimento da nav menu
+Colocamos JS para mvoer o Menu da direita para e esquerda, e também um atraso na transição do aparecimento da nav menu.
+
+VERSÃO 5.1: 
+Adicionado flex-wrap wrap e overflow auto para conteudo não sair do container, ajustado para todos os 4 itens do menu (Home, Produtos, Sobre e Contato) aparecerem; e adicionado barra de rolagem adaptada aos browsers Chrome, Edge, Safari e Firefox.
