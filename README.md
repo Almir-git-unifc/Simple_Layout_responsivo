@@ -9,7 +9,11 @@ Layout de site responsivo, simples, criado com código html, css e javascript; u
 
 # Demo
 
-![layout-site-responsive](xxxxxxxxx)
+![layout-site-responsive-923px](https://github.com/Almir-git-unifc/Layout-responsivo_simple_html-css/blob/main/z-app-1-923px.png)
+
+![layout-site-responsive-717px](https://github.com/Almir-git-unifc/Layout-responsivo_simple_html-css/blob/main/z-app-2-717px.png)
+
+![layout-site-responsive-717px-ShowMenu](https://github.com/Almir-git-unifc/Layout-responsivo_simple_html-css/blob/main/z-app-3-717px-showMenu.png)
 
 
 --------------------------------------------------------------------------------------
@@ -80,3 +84,6 @@ Colocamos JS para mvoer o Menu da direita para e esquerda, e também um atraso n
 
 VERSÃO 5.1: 
 Adicionado flex-wrap wrap e overflow auto para conteudo não sair do container, ajustado para todos os 4 itens do menu (Home, Produtos, Sobre e Contato) aparecerem; e adicionado barra de rolagem adaptada aos browsers Chrome, Edge, Safari e Firefox.
+
+VERSÃO 6.1:  arquivos JS e CSS separados
+Separados os códigos style e JavaScript do arquivo index.html e colocados e em arquivos exclusivos, respectivamente, style.css e script.js.
