@@ -11,9 +11,7 @@ Layout de site responsivo, simples, criado com código html, css e javascript; u
 
 ![layout-site-responsive-923px](https://github.com/Almir-git-unifc/Layout-responsivo_simple_html-css/blob/devAbs/z-app-1-923px.png)
 
-![layout-site-responsive-717px](https://github.com/Almir-git-unifc/Layout-responsivo_simple_html-css/blob/devAbs/z-app-2-717px.png)
-
-![layout-site-responsive-717px-ShowMenu](https://github.com/Almir-git-unifc/Layout-responsivo_simple_html-css/blob/devAbs/z-app-3-717px-showMenu.png)
+![layout-site-responsive-717px](https://github.com/Almir-git-unifc/Layout-responsivo_simple_html-css/blob/devAbs/z-app-2-717px-showMenuz.png)
 
 
 --------------------------------------------------------------------------------------
