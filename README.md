@@ -5,14 +5,25 @@ Simple responsive website layout, with slider menu, created with html, css and j
 ---------------------------------------------------------------------------------------------------------
 
 
-# Demo  <a name = "Demo"></a>
-
 ![layout-site-responsive-923px](https://github.com/Almir-git-unifc/Layout-responsivo_simple_html-css/blob/devAbs/z-app-1-923px.png)
 
 ![layout-site-responsive-717px](https://github.com/Almir-git-unifc/Layout-responsivo_simple_html-css/blob/devAbs/z-app-2-717px-showMenuz.png)
 
 
 --------------------------------------------------------------------------------------
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+- [Intro](#Intro)
+- [Feature](#Feature)
+- [Technologies](#Technologies)
+- [How To Use](#How-To-Use)
+- [Author](#Author)
+- [License](#License)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 # Intro <a name = "Intro"></a>
 Responsive website layout, simple, created with html, css and javascript code; using media rule, scrollbar, sandwich icon and slider menu
@@ -23,18 +34,6 @@ This project was developed previously for Rodrigo M.S., found on youtube with th
 Layout de site responsivo, simples, criado com código html, css e javascript; usando regra de mídia, barra de rolagem, ícone de sanduíche e menu deslizante 
  -->
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-## Table of Contents
-- [Intro](#Intro)
-- [Demo](#Demo)
-- [Feature](#Feature)
-- [Technologies](#Technologies)
-- [How To Use](#How-To-Use)
-- [Author](#Author)
-- [License](#License)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # Feature <a name = "Feature"></a>
 - layout responsive
