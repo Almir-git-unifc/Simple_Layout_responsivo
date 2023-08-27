@@ -1,6 +1,6 @@
 Very simple color CardsPage react_js
 ====================================
-Simple responsive website layout created with html code, css and javascript, using media rule, scrollbar, sandwich icon and slider menu.
+Simple responsive website layout, with slider menu, created with html code, css and javascript.
 
 ---------------------------------------------------------------------------------------------------------
 
